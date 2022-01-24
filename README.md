@@ -1,7 +1,12 @@
-# manjaro
+# bspwm-arco
 
-Install manjaro xfce4.  git clone https://github.com/gideonthomasd/manjaro
+Install arco - no files needed. sudo pacman -Syyu
 
-cd manjaro  chmod +x *.sh
+chmod +x *.sh
 
-Run ./100.... and then ./120.... and ./130......
+run ./100 etc files
+
+sudo systemctl enable lightdm
+
+Includes openbox uses shortcuts
+xmonad --recompile later then logout
