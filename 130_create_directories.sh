@@ -77,6 +77,7 @@ cd qtile
 chmod +x *.sh
 cd ..
 
+cp powermenu.sh ~/powermenu.sh
 #######################################################
 
 if [ ! -d $HOME"/.config" ] 
