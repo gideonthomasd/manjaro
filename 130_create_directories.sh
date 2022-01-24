@@ -6,43 +6,43 @@
 #fi
 
 ############ Make sh executable #######################  padsp mocp ####### (if needed) ######################
-cd leftwm
-chmod +x *.toml
-cd themes
-cd greyblocks
-chmod +x up down change_to_tag
-cd polybar
-cd scripts
-chmod +x *.sh
-cd ..
-cd ..
-cd ..
-cd ..
-cd ..
+#cd leftwm
+#chmod +x *.toml
+#cd themes
+#cd greyblocks
+#chmod +x up down change_to_tag
+#cd polybar
+#cd scripts
+#chmod +x *.sh
+#cd ..
+#cd ..
+#cd ..
+#cd ..
+#cd ..
 
-cd leftwm
-chmod +x *.toml
-cd themes
-cd eden
-chmod +x up down change_to_tag
-cd scripts
-chmod +x *.sh
-cd ..
-cd ..
-cd ..
-cd ..
+#cd leftwm
+#chmod +x *.toml
+#cd themes
+#cd eden
+#chmod +x up down change_to_tag
+#cd scripts
+#chmod +x *.sh
+#cd ..
+#cd ..
+#cd ..
+#cd ..
 
-cd leftwm
-chmod +x *.toml
-cd themes
-cd parker
-chmod +x up down change_to_tag
-cd scripts
-chmod +x *.sh
-cd ..
-cd ..
-cd ..
-cd ..
+#cd leftwm
+#chmod +x *.toml
+#cd themes
+#cd parker
+#chmod +x up down change_to_tag
+#cd scripts
+#chmod +x *.sh
+#cd ..
+#cd ..
+#cd ..
+#cd ..
 
 
 cd bspwm
@@ -146,9 +146,9 @@ mkdir -p $HOME"/.config/leftwm"
 #[ -d $HOME"/.config/rofi" ] || mkdir -p $HOME"/.config/rofi"
 #[ -d $HOME"/.config/jgmenu" ] || mkdir -p $HOME"/.config/jgmenu"
 
-cd leftwm
-cp -r * ~/.config/leftwm
-cd ..
+#cd leftwm
+#cp -r * ~/.config/leftwm
+#cd ..
 
 cd qtile
 cp -r * ~/.config/qtile
@@ -302,8 +302,8 @@ cd ~/bspwm-arco/i3/bumblebee-status/myfiles
 sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 xmonad --recompile
 
-cd ~/.config/leftwm/themes
-ln -s eden current
+#cd ~/.config/leftwm/themes
+#ln -s eden current
 
 sudo systemctl enable bluetooth
 
