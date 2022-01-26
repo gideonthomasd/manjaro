@@ -124,6 +124,7 @@ sddm
 appimagelauncher
 blueman
 pulseaudio-bluetooth
+awesome-terminal-fonts
 yay
 polybar
 )
