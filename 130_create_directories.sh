@@ -44,6 +44,11 @@
 #cd ..
 #cd ..
 
+cd i3New
+cd polybar
+chmod +x *.sh
+cd ..
+cd ..
 
 cd bspwm
 chmod +x bspwmrc
@@ -209,6 +214,12 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 #### Install i3 ##########################
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/i3blocks
+mkdir -p ~/.config/i3New
+
+cd i3New
+cp -r * ~/.config/i3New
+cd ..
+
 
 cd i3
 chmod +x testwallpaper
