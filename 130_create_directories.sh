@@ -48,6 +48,9 @@ cd i3New
 cd polybar
 chmod +x *.sh
 cd ..
+cd bin
+chmod +x *.sh
+cd ..
 cd ..
 
 cd bspwm
