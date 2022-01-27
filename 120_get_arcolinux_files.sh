@@ -6,4 +6,5 @@
 
 ###############################################################################
 
-yay -S downgrade ttf-font-awesome ttf-iosevka-term nerd-fonts-mononoki steam-fonts nerd-fonts-complete
+yay -S downgrade ttf-font-awesome nerd-fonts-mononoki nerd-fonts-complete 
+yay -S ttf-iosevka-term steam-fonts
