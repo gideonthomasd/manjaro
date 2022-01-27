@@ -1,4 +1,4 @@
-# bspwm-arco
+# Manjaro xfce
 
 Install manjaro xfce4 sudo pacman -Syyu
 
