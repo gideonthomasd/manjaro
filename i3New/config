@@ -206,6 +206,7 @@ assign [class="Geany"] $ws4
 assign [class="vlc"] $ws5
 assign [class="mpv"] $ws5
 assign [class="VirtualBox Manager"] $ws7
+assign [class="Steam"] $ws6
 
 ####Focus on new window if on different screen
 for_window [class=Geany] focus
@@ -215,6 +216,7 @@ for_window [class="Pcmanfm"] focus
 for_window [class="vlc"] focus
 for_window [class="mpv"] focus
 for_window [class="VirtualBox Manager"] focus
+for_window [class="Steam"] focus
 
 smart_gaps on
 #for_window [class=".*"] border pixel 0 # (Take off border and initial window)
