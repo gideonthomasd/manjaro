@@ -214,6 +214,28 @@ cp bashrc ~/.bashrc
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+####Install Spectrtwm####################
+
+cd spectrwm
+cd scripts
+chmod +x *.sh
+cd ..
+cd polybar
+chmod +x *.sh
+cd scripts
+chmod +x *.sh
+cd ..
+cd ..
+cd ..
+
+
+mkdir -p ~/.config/spectrwm
+cp spectrwm.conf ~/.spectrwm.conf
+
+cd spectrwm
+cp -r * ~/.config/spectrwm
+cd ..
+
 #### Install i3 ##########################
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/i3blocks
