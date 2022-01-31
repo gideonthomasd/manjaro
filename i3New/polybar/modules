@@ -346,7 +346,8 @@ content-font = 4
 content-foreground= ${color.background}
 content-background = ${color.blue} 
 content-padding=1
-click-left=jgmenu_run
+click-left=~/.config/rofi/launchers/colorful/launcher.sh
+click-right=jgmenu_run
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
