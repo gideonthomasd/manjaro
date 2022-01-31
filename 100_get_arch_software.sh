@@ -127,6 +127,7 @@ pulseaudio-bluetooth
 awesome-terminal-fonts
 yay
 polybar
+spectrwm
 )
 
 count=0
