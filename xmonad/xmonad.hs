@@ -396,13 +396,14 @@ myKeys =
         , ("<F9>", spawn "brave" )
         , ("<F10>", spawn "jgmenu_run")
         , ("<F11>", spawn "pamac-manager")
-        , ("M-x", spawn "~/powermenu.sh" )
+        , ("M-x", spawn "~/.config/rofi/applets/applets/powermenu.sh" )
         , ("M-<F1>", spawn "firefox" )
         , ("M-<F2>", spawn "thunar" )
         , ("M-<F3>", spawn "lxtask" )
         , ("M-v", spawn "pavucontrol" )
         , ("M-<F4>", spawn "blueman-manager" )
         , ("M-g", spawn "geany" )
+        , ("M-d", spawn "~/.config/rofi/launchers/colorful/launcher.sh" )
         , ("C-<Right>", spawn "feh --bg-scale --randomize ~/Pictures/wallpapers/*" )
         
        
