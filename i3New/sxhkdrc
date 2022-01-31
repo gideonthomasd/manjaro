@@ -17,7 +17,8 @@ super + v
 	pavucontrol
 
 super + d
-	rofi -modi drun -show drun -disable-history -icon-theme "Papirus" -show-icons
+	~/.config/rofi/launchers/colorful/launcher.sh
+	#rofi -modi drun -show drun -disable-history -icon-theme "Papirus" -show-icons
 	
 super + F1
 	firefox
@@ -35,7 +36,7 @@ super + F5
 	blueman-manager
 	
 super + x
-	~/powermenu.sh
+	~/.config/rofi/applets/applets/powermenu.sh
 
 F9
   brave
