@@ -162,7 +162,7 @@ alias mp3y="youtube-dl -x --audio-format mp3 --prefer-ffmpeg "
 alias y="youtube-dl "
 
 alias update="sudo timeshift --create && sudo pacman -Syyu"
-
+alias mirror="sudo pacman-mirrors --fasttrack && sudo pacman -Syyu"
 #########To make xterm transparent
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 #NOT NEEDED FOR ARCH alias fixsnap="find -L ~/.local/share/applications -type l -delete && ln -sf /var/lib/snapd/desktop/applications/*.desktop ~/.local/share/applications/"
