@@ -44,6 +44,24 @@
 #cd ..
 #cd ..
 
+cd rofi
+cd applets
+cd applets
+chmod +x *.sh
+cd ..
+cd ..
+cd bin
+chmod +x applet_powermenu
+cd ..
+cd launchers
+cd colorful
+chmod +x *.sh
+cd ..
+cd ..
+cd ..
+
+
+
 cd i3New
 cd polybar
 chmod +x *.sh
