@@ -50,9 +50,9 @@ cd applets
 chmod +x *.sh
 cd ..
 cd ..
-cd bin
-chmod +x applet_powermenu
-cd ..
+#cd bin
+#chmod +x applet_powermenu
+#cd ..
 cd launchers
 cd colorful
 chmod +x *.sh
