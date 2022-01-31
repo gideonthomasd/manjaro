@@ -36,7 +36,7 @@ super + F5
 	blueberry
 	
 super + x
-	~/powermenu.sh
+	~/.config/rofi/applets/applets/powermenu.sh
 
 F2
 	jgmenu_run
