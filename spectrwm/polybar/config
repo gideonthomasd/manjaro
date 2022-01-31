@@ -122,9 +122,9 @@ module-margin-left = 0
 module-margin-right = 0
 
 ;;https://github.com/jaagr/polybar/wiki/Fonts    
-font-0 = "Noto Sans:size=12;3"
+font-0 = "Noto Sans:size=13;3"
 font-1 = "FontAwesome:size=14;3"
-font-2 = "Iosevka Nerd Font:size=17;4"
+font-2 = "Iosevka Nerd Font:size=18;4"
 font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = launcher dot ewmh xwindow
@@ -144,7 +144,7 @@ scroll-up = spectrwm-desknext
 scroll-down = spectrwm-deskprev
 
 
-#################################################################################
+################################################################################
 ###############################################################################
 ############                       MODULES A-Z                      ############
 ################################################################################
@@ -361,7 +361,7 @@ format-prefix = "  "
 format-prefix-foreground = #0084FF
 format-underline = #0084FF
 
-################################################################################
+###############################################################################
 
 [module/jgmenu]
 type = custom/script
@@ -418,7 +418,7 @@ format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
-################################################################################
+##############################################################################
 
 [module/memory2]
 ;https://github.com/jaagr/polybar/wiki/Module:-memory
