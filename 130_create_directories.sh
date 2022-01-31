@@ -338,6 +338,9 @@ cd ..
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
 sudo cp autostart.sh ~/.local/share/dwm
 
+mkdir -p ~/.local/share/fonts
+cp Feather.ttf ~/.local/share/fonts/Feather.ttf
+
 ##############################Install bumblebee for i3########################
 cd ~/.config/i3/bumblebee-status
 makepkg -sicr
