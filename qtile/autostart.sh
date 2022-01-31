@@ -3,4 +3,4 @@
 lxpolkit &
 xcompmgr &
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
-~/.config/bspwm/testwallpaper &
+#~/.config/bspwm/testwallpaper &
