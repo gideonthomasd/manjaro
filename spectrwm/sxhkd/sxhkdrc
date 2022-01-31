@@ -36,7 +36,7 @@ super + F5
 	blueman-manager
 	
 super + x
-	arcolinux-logout
+	/home/phil/.config/rofi/applets/applets/powermenu.sh
 
 F9
   brave
