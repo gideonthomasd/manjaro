@@ -128,6 +128,9 @@ awesome-terminal-fonts
 yay
 polybar
 spectrwm
+dunst
+pamixer
+calcurse
 )
 
 count=0
