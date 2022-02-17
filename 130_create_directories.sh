@@ -44,6 +44,10 @@
 #cd ..
 #cd ..
 
+mkdir -p ~/.config/picom
+cp picom.conf ~/.config/picom/picom.conf
+
+
 cd rofi
 cd applets
 cd applets
