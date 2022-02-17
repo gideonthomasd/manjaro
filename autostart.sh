@@ -1,12 +1,11 @@
 #!/bin/bash
 
 nm-applet &
+blueman-applet &
 #volumeicon &
 lxpolkit &
-dwmblocks &
-picom &
 #slstatus &
-#xcompmgr &
+dwmblocks &
+picom &   # Needed for dwm
 sxhkd -c ~/.config/bspwm/sxhkdrc &
-#~/.config/bspwm/testwallpaper &
-#blueman-applet &
+####~/.config/bspwm/testwallpaper &
