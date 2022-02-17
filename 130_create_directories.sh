@@ -307,33 +307,45 @@ cp -r * ~/.config/xmobar
 cd ..
 
 
-sudo pacman -S snapd
-sudo systemctl enable --now snapd.socket
+#sudo pacman -S snapd
+#sudo systemctl enable --now snapd.socket
 ######## Install DWM ##############################
 
 mkdir -p ~/.local/share/dwm
 sudo mkdir -p /usr/share/xsessions
 
-mkdir -p ~/dwm-flexipatch
-mkdir -p ~/slstatus
+mkdir -p ~/Luke
 
-mkdir -p ~/st-transparency-scrollback
+#mkdir -p ~/dwm-flexipatch
+#mkdir -p ~/slstatus
 
-cd slstatus
-chmod +x ram
+#mkdir -p ~/st-transparency-scrollback
+
+#cd slstatus
+#chmod +x ram
+#cd ..
+
+cd Luke
+cd statusbar
+chmod +x *.sh
+chmod +x sb-volume
+chmod +x sb-clock
+cd ..
 cd ..
 
-cd dwm-flexipatch
-cp -r * ~/dwm-flexipatch
+
+
+cd Luke
+cp -r * ~/Luke
 cd ..
 
-cd slstatus
-cp -r * ~/slstatus
-cd ..
+#cd slstatus
+#cp -r * ~/slstatus
+#cd ..
 
-cd st-transparency-scrollback
-cp -r * ~/st-transparency-scrollback
-cd ..
+#cd st-transparency-scrollback
+#cp -r * ~/st-transparency-scrollback
+#cd ..
 
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
 sudo cp autostart.sh ~/.local/share/dwm
@@ -345,14 +357,14 @@ cp Feather.ttf ~/.local/share/fonts/Feather.ttf
 cd ~/.config/i3/bumblebee-status
 makepkg -sicr
 
-cd ~/dwm-flexipatch
+cd ~/Luke/dwm-flexipatch
 tar -xzvf patch.tar.gz
 sudo make clean install
 
-cd ~/slstatus
+cd ~/Luke/dwmblocks
 sudo make clean install
 
-cd ~/st-transparency-scrollback
+cd ~/Luke/st-transparency-scrollback
 sudo make clean install
 
 #########################Install bumblebee-status files - mine
