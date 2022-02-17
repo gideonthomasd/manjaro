@@ -36,7 +36,8 @@ super + F5
 	blueberry
 	
 super + x
-	~/.config/rofi/applets/applets/powermenu.sh
+	arcolinux-logout
+	#~/.config/rofi/applets/applets/powermenu.sh
 
 F2
 	jgmenu_run
