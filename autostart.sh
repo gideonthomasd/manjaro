@@ -3,8 +3,10 @@
 nm-applet &
 #volumeicon &
 lxpolkit &
-slstatus &
-xcompmgr &
+dwmblocks &
+picom &
+#slstatus &
+#xcompmgr &
 sxhkd -c ~/.config/bspwm/sxhkdrc &
 #~/.config/bspwm/testwallpaper &
-blueman-applet &
+#blueman-applet &
