@@ -47,6 +47,9 @@
 mkdir -p ~/.config/picom
 cp picom.conf ~/.config/picom/picom.conf
 
+mkdir -p ~/.config/dunst
+cp dunstrc ~/.config/dunst/dunstrc
+
 
 cd rofi
 cd applets
