@@ -50,7 +50,7 @@ format-foreground = ${color.black}
 ;#738adb
 click-right = pamac-manager &
 click-left = pamac-manager &
-format-prefix = "  "
+format-prefix = " "
 
 
 [module/backlight]
