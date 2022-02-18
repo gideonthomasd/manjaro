@@ -1,7 +1,7 @@
 #!/bin/bash
 
 nm-applet &
-blueman-applet &
+#blueman-applet &
 #volumeicon &
 lxpolkit &
 #slstatus &
