@@ -19,7 +19,7 @@ lxpolkit &
 xcompmgr -c &
 #volumeicon &
 nm-applet &
-blueman-applet &
+#blueman-applet &
 
 $HOME/.config/polybar-bspwm/launch.sh &
 
