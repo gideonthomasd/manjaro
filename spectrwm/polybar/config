@@ -99,7 +99,8 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 4
-line-color = #f00
+line-color = #ff007f
+;#f00
 
 wm-restack = bspwm
 override-redirect = true
@@ -127,7 +128,7 @@ font-1 = "FontAwesome:size=14;3"
 font-2 = "Iosevka Nerd Font:size=18;4"
 font-3 = "Noto Sans Mono:size=10;0"
 
-modules-left = launcher dot ewmh xwindow
+modules-left = space space launcher dot ewmh dot xwindow
 modules-center = LD myweather RD dot LD mymemory RD dot LD moc RD 
 modules-right = window dot LD pamac-manager RD dot MLD pavolume MRD dot date
 
@@ -321,13 +322,17 @@ format = <label-state>
 label-monitor = %name%
 
 label-active = %name%
-label-active-foreground = #ff99ff
-label-active-background = ${colors.background}
-label-active-underline= #6790eb
+label-active-foreground = #ffffff
+;#33ff99
+;#ff66b2
+label-active-background = #006666
+;${colors.background}
+label-active-underline= #ff007f
+;#6790eb
 label-active-padding = 2
 
 label-occupied = %name%
-label-occupied-foreground = #9999ff
+label-occupied-foreground = #ffff33
 label-occupied-background = ${colors.background}
 label-occupied-padding = 2
 
@@ -562,7 +567,7 @@ type = custom/script
 tail = true
 label = %output%
 exec = ~/.config/spectrwm/polybar/scripts/pavolume.sh --listen
-click-right = exec pavucontrol
+click-right = lxterminal -e 'pulsemixer'
 click-left = ~/.config/spectrwm/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/spectrwm/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/spectrwm/polybar/scripts/pavolume.sh --down
@@ -570,7 +575,7 @@ scroll-down = ~/.config/spectrwm/polybar/scripts/pavolume.sh --down
 format-foreground = #000099
 ;#0F00FF
 format-background = #B48EAD
-;#B48EAD
+;#B48EAD 
 
 
 
