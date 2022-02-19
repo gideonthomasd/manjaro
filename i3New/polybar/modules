@@ -1,13 +1,28 @@
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+[module/xwindow]
+;https://github.com/jaagr/polybar/wiki/Module:-xwindow
+type = internal/xwindow
+
+; Available tokens:
+;   %title%
+; Default: %title%
+label = %title%
+label-maxlen = 15
+
+format-foreground = #9999FF
+;format-background = ${colors.background}
 
 [module/myweather]
 type = custom/script
 interval = 900s
 exec = ~/.config/i3/polybar/dwmweather.sh
-format-foreground = ${colors.light-red}
+format-foreground = "#99FF99"
+;${color.yellow}
 click-left = lxterminal -e 'curl wttr.in/Caerphilly && read'
-format-background = ${color.red}
+click-right = notify-send "Weather" "$(curl wttr.in/Caerphilly?format=3)"
+format-background = ${color.altblack}
+;${color.red}
 
 [module/moc]
 type = custom/script
@@ -15,6 +30,7 @@ interval = 1
 exec = ~/.config/i3/polybar/moc.sh
 format-foreground = ${colors.black}
 click-left = mocp -G
+click-right = setsid -f lxterminal -e 'padsp mocp'
 format-background = ${color.cyan}
 label-foreground = ${color.background}
 
@@ -22,7 +38,8 @@ label-foreground = ${color.background}
 type = custom/text
 content = ""
 click-left = rofi -mode window -show window -hide-scrollbar -pading 20 -live-padding 4 -width 40 -lines 6 &
-content-foreground = ${color.magenta}
+content-foreground = "#FF00FF"
+;${color.magenta}
 ;content-padding = 1
 
 [module/mymemory]
@@ -33,16 +50,18 @@ interval = 1
 format-background = ${color.yellow}
 format-foreground = ${color.black}
 click-left = lxterminal -e 'htop'
+click-right = notify-send "🧠 Memory hogs" "$(ps axch -o cmd:15,%mem --sort=-%mem | head)"
 
 [module/pamac]
 type = custom/script
-exec = pamac checkupdates -q | wc -l
+;exec = pamac checkupdates -q | wc -l
+exec = checkupdates | wc -l
 interval = 1000
-label =   %output%
+label = %output% 
 tail = true
 ;format-foreground = ${colors.foreground}
 ;${colors.foreground}
-format-background = ${color.magenta}
+format-background = ${color.green}
 format-foreground = ${color.black}
 ;format-prefix-foreground = #CCff99
 ;#738adb
@@ -153,6 +172,8 @@ ramp-volume-background = ${color.green}
 ramp-headphones-0 = 
 ramp-headphones-1 = 
 
+click-right = lxterminal -e 'pulsemixer'
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/battery]
@@ -224,13 +245,13 @@ reverse-scroll = false
 
 fuzzy-match = true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
+ws-icon-0 = 1;1-
+ws-icon-1 = 2;2-
+ws-icon-2 = 3;3-
+ws-icon-3 = 4;4-
+ws-icon-4 = 5;5-
+ws-icon-5 = 6;6-
+ws-icon-6 = 7;7-
 format = <label-state><label-mode>
 format-background = ${color.altblack}
 
@@ -240,7 +261,8 @@ label-mode-background = ${color.altblack}
 label-mode-foreground = ${color.yellow}
 
 label-focused = %icon%
-label-focused-foreground = ${color.blue}
+label-focused-foreground = "#FF99FF"
+;${color.red}
 label-focused-background = ${color.altblack}
 
 label-unfocused = %icon%
@@ -341,10 +363,13 @@ label = "%{A1:terminal -e htop &:} %mb_used% %{A}"
 
 [module/launcher]
 type=custom/text
-content = 
-content-font = 4
-content-foreground= ${color.background}
-content-background = ${color.blue} 
+;content = 
+content = 
+content-font = 1
+content-foreground = "#FF00FF"
+;;;${color.background}
+;content-background = ${color.yellow} 
+;;;content-background = "#6666FF"
 content-padding=1
 click-left=~/.config/rofi/launchers/colorful/launcher.sh
 click-right=jgmenu_run
