@@ -1,3 +1,33 @@
+If the above instructions fail (they did for me everytime I got keyring issues), I used the following sequence and it fixes my problems each time:
+
+Remove all keys
+
+sudo rm -rf /etc/pacman.d/gnupg
+Reinitialize files & folders for keys
+
+sudo pacman-key --init
+Repopulate keys
+
+sudo pacman-key --populate archlinux manjaro
+Reinstall latest keyrings
+
+sudo pacman -Sy gnupg archlinux-keyring manjaro-keyring
+Refresh the signature keys
+
+sudo pacman-key --refresh-keys
+Now you can upgrade your packages
+
+sudo pacman -Syu
+
+
+
+
+
+
+
+
+
+
 # pacman -Sy archlinux-keyring
 # pacman-key --populate archlinux
 # pacman-key --refresh-keys
