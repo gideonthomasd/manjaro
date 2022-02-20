@@ -131,6 +131,7 @@ spectrwm
 dunst
 pamixer
 calcurse
+pacui
 )
 
 count=0
