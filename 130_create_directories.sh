@@ -382,15 +382,18 @@ xmonad --recompile
 #cd ~/.config/leftwm/themes
 #ln -s eden current
 
-sudo systemctl enable bluetooth
+mv ~/.config/i3 ~/.config/i3-orig
+mv ~/.config/i3New ~/.config/i3
+
+#sudo systemctl enable bluetooth
 obmenu-generator -p
 
-echo "SNAP: For menu entry copy /var/lib/snapd/desktop/applications to /home/phil/.local/share/applications"
-echo "SNAP : From sxhkd do 'snap run brave' instead of just 'brave' "
+#echo "SNAP: For menu entry copy /var/lib/snapd/desktop/applications to /home/phil/.local/share/applications"
+#echo "SNAP : From sxhkd do 'snap run brave' instead of just 'brave' "
 echo "Appimage: Get appimagelauncher from releases.  Do 'appimagelauncher-lite...AppImage install' in terminal."
-echo "Get Beautyline icon from gnome.  Extract and copy into /usr/share/icons."
-echo "Get Prismatic theme and put in .themmes folder.  Obconf"
-echo "greeter-hide-users=false  in /etc/lightdm/lightdm.conf"
+#echo "Get Beautyline icon from gnome.  Extract and copy into /usr/share/icons."
+#echo "Get Prismatic theme and put in .themmes folder.  Obconf"
+#echo "greeter-hide-users=false  in /etc/lightdm/lightdm.conf"
 
 #cp xprofile ~/.xprofile
 #cp getSession.sh ~/getSession.sh - now inside dwm-6.2/system
