@@ -110,7 +110,7 @@ override-redirect = true
 enable-ipc = true
 
 border-size = 0
-;border-left-size = 0
+;border-left-size = 0   
 ;border-right-size = 25
 ;border-top-size = 0
 ;border-bottom-size = 25
@@ -322,7 +322,7 @@ format = <label-state>
 label-monitor = %name%
 
 label-active = %name%
-label-active-foreground = #ffffff
+label-active-foreground = #ffffff 
 ;#33ff99
 ;#ff66b2
 label-active-background = #006666

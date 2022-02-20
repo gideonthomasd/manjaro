@@ -332,9 +332,11 @@ label = "%{A1:terminal -e htop &:} %mb_used% %{A}"
 
 [module/launcher]
 type=custom/text
-content = 
+content = 
+;content = 
+;content = 
 ;content = 
-content-font = 1
+content-font = 3
 content-foreground= #FF3399
 content-background = ${color.background} 
 content-padding=1
