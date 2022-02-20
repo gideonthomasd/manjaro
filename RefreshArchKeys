@@ -1,4 +1,18 @@
-If the above instructions fail (they did for me everytime I got keyring issues), I used the following sequence and it fixes my problems each time:
+For BEST:  use pacui
+
+If not installed do
+1) wget https://raw.githubusercontent.com/excalibur1234/pacui/master/pacui
+2) bash pacui
+
+Run pacui in terminal.  Choose 10 Fix pacman errors
+
+
+
+
+
+
+NON pacui method:
+I used the following sequence and it fixes my problems each time:
 
 Remove all keys
 
