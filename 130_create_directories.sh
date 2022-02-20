@@ -391,6 +391,7 @@ obmenu-generator -p
 #echo "SNAP: For menu entry copy /var/lib/snapd/desktop/applications to /home/phil/.local/share/applications"
 #echo "SNAP : From sxhkd do 'snap run brave' instead of just 'brave' "
 echo "Appimage: Get appimagelauncher from releases.  Do 'appimagelauncher-lite...AppImage install' in terminal."
+echo "Bluetooth not enabled. Do 'sudo systemctl enable bluetooth' to enable"
 #echo "Get Beautyline icon from gnome.  Extract and copy into /usr/share/icons."
 #echo "Get Prismatic theme and put in .themmes folder.  Obconf"
 #echo "greeter-hide-users=false  in /etc/lightdm/lightdm.conf"
