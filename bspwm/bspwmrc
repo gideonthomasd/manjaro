@@ -16,7 +16,8 @@ sxhkd -c /home/phil/.config/bspwm/sxhkdrc &
 
 setxkbmap gb &
 lxpolkit &
-xcompmgr -c &
+picom &
+#xcompmgr -c &
 #volumeicon &
 nm-applet &
 #blueman-applet &
