@@ -1,0 +1,6 @@
+For network printing:
+
+Get http address (192.168.001.167)
+In cups go to http
+Put in http://192.168.001.167
+Put in driver - installed beforehand
