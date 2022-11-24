@@ -37,7 +37,6 @@ echo "Installation of the development packages"
 list=(
 #ttc-iosevka
 plank
-xcompmgr
 feh
 firefox
 geany
@@ -110,16 +109,16 @@ xdotool
 trayer
 htop
 moc
-xmonad
-xmonad-contrib
-xmobar
+#xmonad
+#xmonad-contrib
+#xmobar
 picom
 #leftwm
 xfce4-appfinder
 #nerd-fonts-source-code-pro
 #arcolinux-candy-beauty-git
 #leftwm-theme-git
-sddm
+#sddm
 #arcolinux-tweak-tool-git
 appimagelauncher
 blueman
@@ -132,6 +131,9 @@ dunst
 pamixer
 calcurse
 pacui
+yt-dlp
+parcellite
+lolcat
 )
 
 count=0

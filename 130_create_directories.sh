@@ -174,7 +174,7 @@ then
 mkdir -p $HOME"/.config/tint2"
 fi
 
-mkdir -p $HOME"/.config/leftwm"
+#mkdir -p $HOME"/.config/leftwm"
 
 #[ -d $HOME"/.config/termite" ] || mkdir -p $HOME"/.config/termite"
 #[ -d $HOME"/.config/rofi" ] || mkdir -p $HOME"/.config/rofi"
@@ -210,9 +210,9 @@ cd ..
 #cp -r * ~/.dwm
 #cd ..
 
-cd termite
-cp -r * ~/.config/termite
-cd ..
+#cd termite
+#cp -r * ~/.config/termite
+#cd ..
 
 cd rofi
 cp -r * ~/.config/rofi
@@ -290,28 +290,28 @@ cd ..
 
 
 ######## Install xmonad ##########################
-mkdir -p ~/.xmonad
-mkdir -p ~/.config/xmobar
+#mkdir -p ~/.xmonad
+#mkdir -p ~/.config/xmobar
 
-cd xmonad
-chmod +x autostart.sh
-#chmod +x testwallpaper
-chmod +x xmonad.hs
-cd ..
+#cd xmonad
+#chmod +x autostart.sh
+#####chmod +x testwallpaper
+#chmod +x xmonad.hs
+#cd ..
 
-cd xmobar
-chmod +x xmobarrc
-chmod +x *.sh
+#cd xmobar
+#chmod +x xmobarrc
+#chmod +x *.sh
 
-cd ..
+#cd ..
 
-cd xmonad
-cp -r * ~/.xmonad
-cd ..
+#cd xmonad
+#cp -r * ~/.xmonad
+#cd ..
 
-cd xmobar
-cp -r * ~/.config/xmobar
-cd ..
+#cd xmobar
+#cp -r * ~/.config/xmobar
+#cd ..
 
 
 #sudo pacman -S snapd
@@ -355,7 +355,7 @@ cd ..
 #cd ..
 
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
-sudo cp autostart.sh ~/.local/share/dwm
+cp autostart.sh ~/.local/share/dwm
 
 mkdir -p ~/.local/share/fonts
 cp Feather.ttf ~/.local/share/fonts/Feather.ttf
@@ -377,7 +377,7 @@ sudo make clean install
 #########################Install bumblebee-status files - mine
 cd ~/manjaro/i3/bumblebee-status/myfiles
 sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
-xmonad --recompile
+#xmonad --recompile
 
 #cd ~/.config/leftwm/themes
 #ln -s eden current
