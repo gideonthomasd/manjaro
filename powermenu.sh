@@ -35,6 +35,8 @@ then
    pkill xmonad
    pkill i3
    pkill python
+   pkill qtile
+   pkill spectrwm
 elif [ "$selected_option" == "$shutdown" ]
 then
     systemctl poweroff
