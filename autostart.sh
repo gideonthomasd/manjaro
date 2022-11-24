@@ -1,6 +1,8 @@
 #!/bin/bash
 
 nm-applet &
+blueman-applet &
+parcellite &
 #blueman-applet &
 #volumeicon &
 lxpolkit &
