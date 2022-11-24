@@ -163,7 +163,13 @@ alias y="youtube-dl "
 
 alias update="sudo timeshift --create && sudo pacman -Syyu"
 alias mirror="sudo pacman-mirrors -f 5 && sudo pacman -Syyu"
+
+alias yt7='yt-dlp -o "%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" -f "best[height>=720][ext=mp4]"'
+alias yta='yt-dlp -ic --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0'
+alias s='yay -Ss'
+neofetch | lolcat
+
 #########To make xterm transparent
 #[ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 #NOT NEEDED FOR ARCH alias fixsnap="find -L ~/.local/share/applications -type l -delete && ln -sf /var/lib/snapd/desktop/applications/*.desktop ~/.local/share/applications/"
-neofetch
+#neofetch
