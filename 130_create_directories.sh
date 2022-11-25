@@ -382,8 +382,8 @@ sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 #cd ~/.config/leftwm/themes
 #ln -s eden current
 
-mv ~/.config/i3 ~/.config/i3-orig
-mv ~/.config/i3New ~/.config/i3
+#####mv ~/.config/i3 ~/.config/i3-orig
+#####mv ~/.config/i3New ~/.config/i3
 
 #sudo systemctl enable bluetooth
 obmenu-generator -p
