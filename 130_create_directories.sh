@@ -99,6 +99,7 @@ cd ..
 
 cd openbox
 chmod +x autostart
+chmod +x *.sh
 cd ..
 
 cd tint2
