@@ -145,41 +145,13 @@ fi
 #mkdir -p $HOME"/dwm-6.2"
 #mkdir -p $HOME"/dwm-bar"
 #mkdir -p $HOME"/.dwm"
-if [ ! -d $HOME"/.config/termite" ]
-then
-mkdir -p $HOME"/.config/termite"
-fi
 
-if [ ! -d $HOME"/.config/rofi" ] 
-then
-mkdir -p $HOME"/.config/rofi"
-fi
-
-if [ ! -d $HOME"/.config/jgmenu" ]
-then
-mkdir -p $HOME"/.config/jgmenu"
-fi
-
-if [ ! -d $HOME"/.config/openbox" ]
-then
-mkdir -p $HOME"/.config/openbox"
-fi
-
-if [ ! -d $HOME"/.config/obmenu-generator" ]
-then
-mkdir -p $HOME"/.config/obmenu-generator"
-fi
-
-if [ ! -d $HOME"/.config/tint2" ]
-then
-mkdir -p $HOME"/.config/tint2"
-fi
 
 #mkdir -p $HOME"/.config/leftwm"
 
 #[ -d $HOME"/.config/termite" ] || mkdir -p $HOME"/.config/termite"
-#[ -d $HOME"/.config/rofi" ] || mkdir -p $HOME"/.config/rofi"
-#[ -d $HOME"/.config/jgmenu" ] || mkdir -p $HOME"/.config/jgmenu"
+[ -d $HOME"/.config/rofi" ] || mkdir -p $HOME"/.config/rofi"
+[ -d $HOME"/.config/jgmenu" ] || mkdir -p $HOME"/.config/jgmenu"
 
 #cd leftwm
 #cp -r * ~/.config/leftwm
@@ -223,20 +195,20 @@ cd jgmenu
 cp -r * ~/.config/jgmenu
 cd ..
 
-cd openbox
-cp -r * ~/.config/openbox
-cd ..
+#cd openbox
+#cp -r * ~/.config/openbox
+#cd ..
 
-cd obmenu-generator
-cp -r * ~/.config/obmenu-generator
-cd ..
+#cd obmenu-generator
+#cp -r * ~/.config/obmenu-generator
+#cd ..
 
-cd tint2
-cp -r * ~/.config/tint2
-cd ..
+#cd tint2
+#cp -r * ~/.config/tint2
+#cd ..
 
-mv ~/.bashrc ~/.bashrc-$(date +%Y.%m.%d-%H.%M.%S)
-cp bashrc ~/.bashrc
+#mv ~/.bashrc ~/.bashrc-$(date +%Y.%m.%d-%H.%M.%S)
+#cp bashrc ~/.bashrc
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -387,7 +359,7 @@ sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 #####mv ~/.config/i3New ~/.config/i3
 
 #sudo systemctl enable bluetooth
-obmenu-generator -p
+#obmenu-generator -p
 
 #echo "SNAP: For menu entry copy /var/lib/snapd/desktop/applications to /home/phil/.local/share/applications"
 #echo "SNAP : From sxhkd do 'snap run brave' instead of just 'brave' "
